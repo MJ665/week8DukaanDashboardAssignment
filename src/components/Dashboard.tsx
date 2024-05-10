@@ -8,8 +8,11 @@ export default function Dashboard() {
 
   return (
     <>
+    <div className=" overflow-x-auto">
       <Navbar/>
       <Canvas/>
+        
+    </div>
     </>
   )
 }

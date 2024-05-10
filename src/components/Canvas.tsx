@@ -7,7 +7,7 @@ export default function Dashboard() {
   
 
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-200 pb-10">
         <div className="pt-4 ">
             <div className="py-4 px-10 flex justify-between ">
                 <div className="border  border-slate-300 max-w-min p-2 space-x-4"><span>adsf</span><span>Icon</span></div>
@@ -71,7 +71,6 @@ export default function Dashboard() {
         </div>
        
 
-      <CardComponent/>
     </div>
   )
 }
