@@ -55,7 +55,7 @@ export default function Dashboard() {
     
         </div>
         <div className="mt-2">
-            <Table></Table>
+            <Table tableExists = {true}  tableContent= {[[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]} ></Table>
         </div>
 
         </div>
@@ -79,13 +79,45 @@ export default function Dashboard() {
 
 
 
-function Table (){
+function Table (props){
   
+
+
+    if(!props.tableExists){return(
+<>
+            <div className="flex space-x-10  bg-gray-300  justify-between ">
+
+                <div className="flex px-6 border   min-w-36 text-center  border-slate-400 " >jf           ff</div>
+                <div className="flex px-6 border   min-w-36 text-center  border-slate-400 " >jf           ff</div>
+                <div className="flex px-6 border   min-w-36 text-center  border-slate-400 " >jf           ff</div>
+                <div className="flex px-6 border   min-w-36 text-center  border-slate-400 " >jfff</div>
+
+
+            </div>
+            <hr className="h-0.5 border-t-0 bg-neutral-100  bg-slate-400" />
+            <br/>
+ 
+
+        <div className="flex space-x-10 bg-white justify-between ">
+
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >jjjjjj</div>
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >jjjjjj</div>
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >jjjjjj</div>
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >jjjjjj</div>
+          
+
+        </div>
+</>
+            
+    )}
+
+
+    else{
         return (
             <>
             
 
-            <div className="flex space-x-10 bg-gray-300  justify-between ">
+            <div className="flex space-x-10  bg-gray-300  justify-between ">
 
                 <div className="flex px-6 border   min-w-36 text-center  border-slate-400 " >jf           ff</div>
                 <div className="flex px-6 border   min-w-36 text-center  border-slate-400 " >jf           ff</div>
@@ -94,27 +126,35 @@ function Table (){
 
 
             </div>
-                <br/>
-                <hr className="" />
-                <br/>
 
 
 
+{ 
+    props.tableContent.map((element)=> {
+        return (
+            <>
+            <hr className="h-0.5 border-t-0 bg-neutral-100  bg-slate-400" />
+            <br/>
+ 
 
-            <div className="flex space-x-10 bg-gray-300  justify-between ">
+        <div className="flex space-x-10 bg-white justify-between ">
 
-                <div className="flex px-6 border   min-w-36 text-center  border-slate-400 " >jf           ff</div>
-                <div className="flex px-6 border   min-w-36 text-center  border-slate-400 " >jf           ff</div>
-                <div className="flex px-6 border   min-w-36 text-center  border-slate-400 " >jf           ff</div>
-                <div className="flex px-6 border   min-w-36 text-center  border-slate-400 " >jfff</div>
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >{element[0]}</div>
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >{element[1]}</div>
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >{element[2]}</div>
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >{element[3]}</div>
+          
 
+        </div>
+        </>
+        )
+    })
+}
 
-            </div>
-                <hr />
-                <hr />
-                <hr />
+             
+               
             </>
         )
-   
+   }
    
 }
