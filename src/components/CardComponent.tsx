@@ -10,7 +10,7 @@ export default function CardComponent(porps: any) {
 
   return (
     <>
-      <div className="  m-4  min-w-fit max-w-sm rounded-xl overflow-hidden shadow-lg border   bg-slate-300 border-slate-600">
+      <div className="  m-4   sm:w-96 min-w-max   max-w-sm rounded-xl overflow-hidden shadow-lg border   bg-slate-300 border-slate-600">
 
 
 
