@@ -55,7 +55,7 @@ export default function Dashboard() {
     
         </div>
         <div className="mt-2">
-            <Table tableExists = {true}  tableContent= {[[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]} ></Table>
+            <Table tableExists = {false}  tableContent= {[[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]} ></Table>
         </div>
 
         </div>
@@ -100,10 +100,10 @@ function Table (props){
 
         <div className="flex space-x-10 bg-white justify-between ">
 
-            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >jjjjjj</div>
-            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >jjjjjj</div>
-            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >jjjjjj</div>
-            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >jjjjjj</div>
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >&nbsp;-&nbsp;</div>
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >&nbsp;-&nbsp;</div>
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >&nbsp;-&nbsp;</div>
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >&nbsp;-&nbsp;</div>
           
 
         </div>
