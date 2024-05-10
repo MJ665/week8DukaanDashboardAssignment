@@ -55,7 +55,7 @@ export default function Dashboard() {
     
         </div>
         <div className="mt-2">
-            <Table tableExists = {false}  tableContent= {[[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]} ></Table>
+            <Table tableExists = {true}  tableContent= {[[1,"Successful",3,4],[1,"Processing",3,4],[1,"Successful",3,4],[1,"Successful",3,4],[1,"Successful",3,4],[1,"Successful",3,4]]} ></Table>
         </div>
 
         </div>
@@ -140,7 +140,11 @@ function Table (props){
         <div className="flex space-x-10 bg-white justify-between ">
 
             <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >{element[0]}</div>
-            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >{element[1]}</div>
+            {(element[1] == "Successful")?
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " ><span className="w-1 mt-2 h-1 p-1 flex justify-between bg-green-700 rounded-full"></span> &nbsp;Successful</div>:
+            <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " ><span className="w-1 mt-2 h-1 p-1 flex justify-between bg-red-700 rounded-full"></span> &nbsp;Successful</div>
+
+            }
             <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >{element[2]}</div>
             <div className="flex px-6 py-2 border   min-w-36 text-center  border-slate-400 " >{element[3]}</div>
           
