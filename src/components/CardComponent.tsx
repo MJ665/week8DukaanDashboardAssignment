@@ -10,10 +10,6 @@ export default function CardComponent(porps: any) {
 
   return (
     <>
-      <div>
-
-        asdfasdf
-      </div>
       <div className="  m-4  min-w-fit max-w-sm rounded-xl overflow-hidden shadow-lg border   bg-slate-300 border-slate-600">
 
 

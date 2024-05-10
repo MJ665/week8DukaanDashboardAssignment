@@ -1,5 +1,5 @@
 // import { useState, useEffect, useMemo, useCallback, memo } from 'react'
-import Canvas from "./Canvas"
+import CardComponent from "./CardComponent"
 
 import Navbar from "./Navbar"
 
@@ -8,8 +8,11 @@ export default function Dashboard() {
 
   return (
     <>
-      <Navbar/>
-      <Canvas/>
+     
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
     </>
   )
 }
