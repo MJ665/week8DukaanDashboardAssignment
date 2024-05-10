@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useCallback, memo } from 'react'
-import CardComponent from "./components/CardComponent"
+import Dashboard from "./components/Dashboard"
 import './App.css'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <CardComponent/>
+      <Dashboard/>
     </>
   )
 }
