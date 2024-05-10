@@ -56,6 +56,7 @@ export default function CardComponent(porps: any) {
           <div className=" flex flex-auto justify-end px-5 pt-4 pb-3 ">laidjf</div>
           
         </div>
+        
        
 
       </div>
