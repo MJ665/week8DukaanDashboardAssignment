@@ -26,6 +26,9 @@ export default function Dashboard() {
         <span className="px-4 py-1   text-xl   rounded-2xl bg-blue-300">AAAA()</span>
         <span className="px-4 py-1   text-xl   rounded-2xl bg-blue-300">AAAA()</span>
      </div>
+     <div className="m-5 p-4">
+        adfadsfadsf
+     </div>
       <CardComponent/>
     </div>
   )
